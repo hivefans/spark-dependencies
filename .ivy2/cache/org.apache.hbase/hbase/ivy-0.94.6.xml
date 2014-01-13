@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.hbase"
+		module="hbase"
+		revision="0.94.6"
+		status="release"
+		publication="20130326130033"
+	>
+		<description homepage="http://hbase.apache.org">
+		HBase is the &amp;lt;a href=&quot;http://hadoop.apache.org&quot;&amp;rt;Hadoop&lt;/a&amp;rt; database. Use it when you need
+    random, realtime read/write access to your Big Data.
+    This project&apos;s goal is the hosting of very large tables -- billions of rows X millions of columns -- atop clusters
+    of commodity hardware.
+		</description>
+		<m:properties__surefire.provider>surefire-junit47</m:properties__surefire.provider>
+		<m:properties__commons-math.version>2.1</m:properties__commons-math.version>
+		<m:properties__surefire.firstPartForkMode>once</m:properties__surefire.firstPartForkMode>
+		<m:properties__test.output.tofile>true</m:properties__test.output.tofile>
+		<m:properties__compileSource>1.6</m:properties__compileSource>
+		<m:properties__surefire.firstPartGroups>org.apache.hadoop.hbase.SmallTests</m:properties__surefire.firstPartGroups>
+		<m:properties__thrift.version>0.8.0</m:properties__thrift.version>
+		<m:properties__commons-codec.version>1.4</m:properties__commons-codec.version>
+		<m:properties__avro.version>1.5.3</m:properties__avro.version>
+		<m:properties__surefire.version>2.12-TRUNK-HBASE-2</m:properties__surefire.version>
+		<m:properties__protobuf.version>2.4.0a</m:properties__protobuf.version>
+		<m:properties__surefire.secondPartGroups>org.apache.hadoop.hbase.MediumTests</m:properties__surefire.secondPartGroups>
+		<m:properties__package.release>1</m:properties__package.release>
+		<m:properties__buildDate>
+      ${maven.build.timestamp}
+    </m:properties__buildDate>
+		<m:properties__jetty.jspapi.version>6.1.14</m:properties__jetty.jspapi.version>
+		<m:properties__package.pid.dir>/var/run/hbase</m:properties__package.pid.dir>
+		<m:properties__log4j.version>1.2.16</m:properties__log4j.version>
+		<m:properties__jersey.version>1.8</m:properties__jersey.version>
+		<m:properties__hadoop-snappy.version>0.0.1-SNAPSHOT</m:properties__hadoop-snappy.version>
+		<m:properties__commons-configuration.version>1.6</m:properties__commons-configuration.version>
+		<m:properties__commons-io.version>2.1</m:properties__commons-io.version>
+		<m:properties__unittest.include>**/Test*.java</m:properties__unittest.include>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__surefire.firstPartThreadCount>1</m:properties__surefire.firstPartThreadCount>
+		<m:properties__commons-httpclient.version>3.1</m:properties__commons-httpclient.version>
+		<m:properties__junit.version>4.10-HBASE-1</m:properties__junit.version>
+		<m:properties__metrics-core.version>2.1.2</m:properties__metrics-core.version>
+		<m:properties__final.name>${project.artifactId}-${project.version}</m:properties__final.name>
+		<m:properties__commons-logging.version>1.1.1</m:properties__commons-logging.version>
+		<m:properties__jasper.version>5.5.23</m:properties__jasper.version>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:properties__integrationtest.include>**/IntegrationTest*.java</m:properties__integrationtest.include>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__stax-api.version>1.0.1</m:properties__stax-api.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__surefire.timeout>900</m:properties__surefire.timeout>
+		<m:properties__surefire.skipFirstPart>false</m:properties__surefire.skipFirstPart>
+		<m:properties__commons-cli.version>1.2</m:properties__commons-cli.version>
+		<m:properties__surefire.skipSecondPart>false</m:properties__surefire.skipSecondPart>
+		<m:properties__jruby.version>1.6.5</m:properties__jruby.version>
+		<m:properties__jackson.version>1.8.8</m:properties__jackson.version>
+		<m:properties__clover.version>2.6.3</m:properties__clover.version>
+		<m:properties__surefire.secondPartThreadCount>2</m:properties__surefire.secondPartThreadCount>
+		<m:properties__maven.build.timestamp.format>
+      yyyy-MM-dd&apos;T&apos;HH:mm
+    </m:properties__maven.build.timestamp.format>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|null__maven-site-plugin__null|org.apache.avro__avro-maven-plugin__null|org.codehaus.mojo__xml-maven-plugin__1.0-beta-3|com.agilejava.docbkx__docbkx-maven-plugin__2.0.13|null__maven-assembly-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-failsafe-plugin__null|null__maven-antrun-plugin__1.6|org.codehaus.mojo__build-helper-maven-plugin__1.5|org.jamon__jamon-maven-plugin__2.3.4|org.apache.maven.plugins__maven-eclipse-plugin__2.8</m:maven.plugins>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__slf4j.version>1.4.3</m:properties__slf4j.version>
+		<m:properties__package.version>0.91.0</m:properties__package.version>
+		<m:properties__package.conf.dir>/etc/hbase</m:properties__package.conf.dir>
+		<m:properties__jetty.version>6.1.26</m:properties__jetty.version>
+		<m:properties__commons-lang.version>2.5</m:properties__commons-lang.version>
+		<m:properties__surefire.firstPartParallel>classes</m:properties__surefire.firstPartParallel>
+		<m:properties__jaxb-api.version>2.1</m:properties__jaxb-api.version>
+		<m:properties__guava.version>11.0.2</m:properties__guava.version>
+		<m:properties__mockito-all.version>1.8.5</m:properties__mockito-all.version>
+		<m:properties__package.log.dir>/var/log/hbase</m:properties__package.log.dir>
+		<m:properties__package.prefix>/usr</m:properties__package.prefix>
+		<m:properties__zookeeper.version>3.4.5</m:properties__zookeeper.version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="hbase" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="com.yammer.metrics" name="metrics-core" rev="2.1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.google.guava" name="guava" rev="11.0.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-cli" name="commons-cli" rev="1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-configuration" name="commons-configuration" rev="1.6" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.github.stephenc.high-scale-lib" name="high-scale-lib" rev="1.1.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-codec" name="commons-codec" rev="1.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-httpclient" name="commons-httpclient" rev="3.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-io" name="commons-io" rev="2.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-lang" name="commons-lang" rev="2.5" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-logging" name="commons-logging" rev="1.1.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="log4j" name="log4j" rev="1.2.16" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.avro" name="avro" rev="1.5.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="com.thoughtworks.paranamer" module="paranamer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.thoughtworks.paranamer" module="paranamer-ant" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.avro" name="avro-ipc" rev="1.5.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.zookeeper" name="zookeeper" rev="3.4.5" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="jline" module="jline" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.thrift" name="libthrift" rev="0.8.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="org.slf4j" module="slf4j-simple" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jruby" name="jruby-complete" rev="1.6.5" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.mortbay.jetty" name="jetty" rev="6.1.26" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="org.mortbay.jetty" module="servlet-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.mortbay.jetty" name="jetty-util" rev="6.1.26" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.mortbay.jetty" name="jsp-2.1" rev="6.1.14" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="ant" module="ant" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.mortbay.jetty" name="jsp-api-2.1" rev="6.1.14" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.mortbay.jetty" name="servlet-api-2.5" rev="6.1.14" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.codehaus.jackson" name="jackson-core-asl" rev="1.8.8" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.codehaus.jackson" name="jackson-mapper-asl" rev="1.8.8" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.codehaus.jackson" name="jackson-jaxrs" rev="1.8.8" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.codehaus.jackson" name="jackson-xc" rev="1.8.8" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.4.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.4.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="tomcat" name="jasper-compiler" rev="5.5.23" force="true" conf="runtime->compile(*),runtime(*),master(*)">
+			<exclude org="javax.servlet" module="jsp-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="javax.servlet" module="servlet-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="ant" module="ant" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="tomcat" name="jasper-runtime" rev="5.5.23" force="true" conf="runtime->compile(*),runtime(*),master(*)">
+			<exclude org="javax.servlet" module="servlet-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jamon" name="jamon-runtime" rev="2.3.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.google.protobuf" name="protobuf-java" rev="2.4.0a" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.sun.jersey" name="jersey-core" rev="1.8" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.sun.jersey" name="jersey-json" rev="1.8" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.sun.jersey" name="jersey-server" rev="1.8" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="javax.xml.bind" name="jaxb-api" rev="2.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="javax.xml.stream" module="stax-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="stax" name="stax-api" rev="1.0.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.10-HBASE-1" force="true" conf="optional->compile(*),provided(*),master(*)"/>
+		<dependency org="org.mockito" name="mockito-all" rev="1.8.5" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.commons" name="commons-math" rev="2.1" force="true" conf="test->runtime(*),master(*)"/>
+	</dependencies>
+</ivy-module>
